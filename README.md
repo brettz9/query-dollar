@@ -23,8 +23,15 @@ import {$, $$} from './node_modules/query-dollar/dollar.js';
 
 ## Usage
 
+Returns a DOM element of array of DOM elements:
+
 ```js
+// Returns, e.g., <div id="aSingleElement">
 $('#aSingleElement');
 
+// Returns, e.g., [
+//   <span class="givesAnArrayOfElements">,
+//   <span class="givesAnArrayOfElements">
+// ]
 $$('.givesAnArrayOfElements');
 ```
