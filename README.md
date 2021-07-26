@@ -9,14 +9,22 @@ Ultra-light, ESM-only wrapper for `document.querySelector` and
 npm i query-dollar
 ```
 
-## Usage (bundler)
+## Set-up (bundler)
 
 ```js
 import {$, $$} from 'query-dollar';
 ```
 
-## Usage (direct usage)
+## Set-up (direct import)
 
 ```js
 import {$, $$} from './node_modules/query-dollar/dollar.js';
+```
+
+## Usage
+
+```js
+$('#aSingleElement');
+
+$$('.givesAnArrayOfElements');
 ```
